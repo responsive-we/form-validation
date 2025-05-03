@@ -1,12 +1,63 @@
-# React + Vite
+# React Form with Formik & Yup (Vite Project)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple signup form built using **React**, **Formik**, and **Yup** in a **Vite** development environment. It demonstrates real-time form validation using Yup schemas.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Built with **React + Vite**
+* Form state management using **Formik**
+* Validation using **Yup**
+* Real-time error feedback
+* Fields:
 
-## Expanding the ESLint configuration
+  * **Name** – Required, 2-50 characters
+  * **Email** – Required, valid format
+  * **Password** – Required, minimum 8 characters, includes letters, numbers, and special characters
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/react-formik-form.git
+   cd react-formik-form
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+## 📂 File Structure
+
+```
+src/
+│
+├── components/
+│   └── SignupForm.jsx   # Main form component
+│
+└── App.jsx              # Renders the form
+```
+
+## 🧪 Technologies Used
+
+* React
+* Vite
+* Formik
+* Yup
+
+## ✅ Password Validation Rule
+
+The password must match the following criteria:
+
+* Minimum 8 characters
+* At least one alphabet (`a-z` or `A-Z`)
+* At least one number (`0-9`)
+* At least one special character (`@, $, !, %, *, #, ?, &`)
